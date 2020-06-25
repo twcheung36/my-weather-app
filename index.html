@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>
+      Weather
+    </title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <h1 class="city" id=headline-city>
+          Hamilton, CA
+      </h1>
+      <h1 class="temperature">
+        <strong id="temperature-numbers">
+          12
+        </strong>
+        <small>
+          <a href="#" id="celsius">
+            °C
+          </a> | 
+          <a href="#" id="fahrenheit">
+            °F
+          </a>
+        </small>
+      </h1>
+      <h2 class="location">
+        <!--Ontario, Canada 🇨🇦-->
+        <button id="current-location">Current Location</button>
+      </h2>
+      <h3 class="time-date">
+        May 31 sun 08:30 AM
+      </h3>
+
+      <div class="textbox">
+        <form id="search-city">
+          <input 
+          type="text"
+          id="city-input"
+          placeholder="Enter a city" 
+          />
+          <input type="submit" id="search-location" value="Search" />
+        </form>
+      </div>
+
+      <!--<h4 class="sunrise-sunset">
+        ☀️ 05:42 🌙 20:52
+      </h4>-->
+
+      <div class="moreinfo">
+        <div class="row">
+          <div class="col-sm" id="feels-like">
+            Feels like: 14°C
+          </div>
+          <div class="col-sm" id="humidity">
+            Humidity: 80%
+          </div>
+          <div class="col-sm" id="wind-speed">
+            Wind: 3 km/h
+          </div>
+        </div>
+      </div>
+
+      <p class="forecast">
+        Hourly Forecast
+      </p>
+
+      <div class="hourly-forecast">
+        <div class="row row-cols-5">
+          <div class="col">
+            11°C
+            <br />
+            ☁️
+            <br />
+            09:00
+          </div>
+          <div class="col">
+            12°C
+            <br />
+            ☁️
+            <br />
+            10:00
+          </div>
+          <div class="col">
+            12°C
+            <br />
+            🌤
+            <br />
+            11:00
+          </div>
+          <div class="col">
+            13°C
+            <br />
+            ☀️
+            <br />
+            12:00
+          </div>
+          <div class="col">
+            13°C
+            <br />
+            ☀️
+            <br />
+            13:00
+          </div>
+        </div>
+      </div>
+
+      <p class="trend">
+        5 Day Trend
+      </p>
+
+      <div class="day-trend">
+        <div class="row row-cols-5">
+          <div class="col">
+            <h5>Mon</h5>
+            🌥
+            <br />
+            22°/15°
+          </div>
+          <div class="col">
+            <h5>Tue</h5>
+            🌤
+            <br />
+            21°/8°
+          </div>
+          <div class="col">
+            <h5>Wed</h5>
+            ☀️
+            <br />
+            18°/10°
+          </div>
+          <div class="col">
+            <h5>Thur</h5>
+            🌧
+            <br />
+            22°/13°
+          </div>
+          <div class="col">
+            <h5>Fri</h5>
+            ⛈
+            <br />
+            17°/10°
+          </div>
+        </div>
+      </div>
+      <img src="images/cityview.png" alt="City view" />
+    <p class="footer">
+      Coded by
+      <a href="https://www.linkedin.com/in/twcheung/" traget="_blank">
+        Wing Cheung
+      </a>
+    </p>
+    <script src="src/index.js"></script>
+  </body>
+  </div>
+</html>
+

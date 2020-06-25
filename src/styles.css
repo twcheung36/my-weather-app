@@ -1,0 +1,135 @@
+h1,
+h3,
+p,
+.moreinfo,
+.col {
+  color: #2575fc;
+}
+
+h2,
+h4 {
+  color: #48c6ef;
+}
+
+h3,
+h4,
+.temperature {
+  text-align: right;
+}
+
+.city,
+.time-date,
+h5 {
+  text-transform: uppercase;
+}
+
+.container {
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  color: #30cfd0;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-radius: 0.5cm;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.city {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.temperature {
+  position: relative;
+  top: -65px;
+  font-size: 50px;
+}
+
+.textbox {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+  position: relative;
+  top: -90px;
+}
+
+.location {
+  display: block;
+  border-radius: 5px;
+  position: relative;
+  top: -65px;
+  font-size: 16px;
+}
+
+.time-date {
+  position: relative;
+  top: -95px;
+  font-size: 20px;
+}
+
+/*.sunrise-sunset {
+  position: relative;
+  top: -130px;
+  font-size: 24px;
+} */
+
+.moreinfo {
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  top: -95px;
+  font-size: 19px;
+}
+
+.forecast {
+  position: relative;
+  top: -100px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.hourly-forecast {
+  text-align: center;
+  border: 1px solid #30cfd0;
+  border-radius: 0.2cm;
+  padding: 10px;
+  font-size: 22px;
+  position: relative;
+  top: -110px;
+}
+
+.trend {
+  position: relative;
+  top: -70px;
+  font-weight: bold;
+  font-size: 22px;
+  display: block;
+}
+
+.day-trend {
+  text-align: center;
+  border: 1px solid #30cfd0;
+  border-radius: 0.2cm;
+  padding: 10px;
+  font-size: 20px;
+  position: relative;
+  top: -80px;
+  display: block;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 10px;
+  position: relative;
+  top: -30px;
+}
+
+form {
+  margin: 10px 0;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+}
